@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos en Linea: aprende de todo y a tu propio ritmo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/brands.css">
+    <link rel="stylesheet" href="fontawesome/css/solid.css">
+    <link rel="stylesheet" href="fontawesome/css/regular.css">
+
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-logotipo">
+                <img class="imagen-logotipo" src="img/logoipsum-239.svg" alt="logotipo">
+            </div>
+
+            <div class="navbar-categorias">
+                <a href="#" class="categorias text-color-morado">Categorias</a>
+            </div>
+
+            <form class="navbar-buscar">
+                <input class="nav-search-input" placeholder="Busca cualquier cosa" type="text" name="buscar" id="buscar">
+                <button type="submit" class="nav-search-btn">
+                    <img src="img/icons8-búsqueda-17.png" alt="">
+                </button>
+                <!-- <input type="submit" id="submit-buscador" class="submit-buscador"> -->
+
+            </form>
+
+            <div class="navbar-bussines">
+                <a class="text-color-morado">AcademiaOnline Bussines</a>
+            </div>
+            <div class="navbar-enseña">
+                <a class="text-color-morado">Enseña en AcademiaOnline</a>
+            </div>
+
+            <div class="navbar-carrito">
+                <ul>
+                    <li class="submenu">
+                        <i class="fa-solid fa-cart-shopping"></i>  
+                            <div id="carrito">
+                                    
+                                <div id="lista-carrito" class="u-full-width">
+                                </div>
+
+                                <a href="#" id="vaciar-carrito" class="btn-vaciar-carrito button-primary u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div class="navbar-iniciosesion">
+                  
+                <a href="#"  class="iniciar-sesion">Inicia Sesion</a>
+                
+                <a href="#" class="registrate">Registrate</a>
+                
+            </div>
+
+        </nav>
+
+
+        
+    </header>
+    <div class="header-slider">
+            
+        <img class="imagen-slider" src="img/imagen-slider.jpg" alt="banner cursos en linea">
+        <div class="text-slider">
+            <h2 class="titulo-slider">Preparate para el futuro</h2>
+            <p class="description">Destaca entre la multitud con las habilidades más actuales. Consigue cursos desde solo 179 MX durante esta oferta especial.</p>     
+        </div>
+   
+    </div>
+    <main id="lista-cursos" class="container">
+        <section class="section-cursos">
+            <h2 class="quitar-margen">Los mejores cursos de Español</h2>
+          
+            <div class="cursos-card">
+
+                <div class="card">
+                    <img class="card-img" src="img/html,css.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4 class="quitar-margen">HTML5, CSS3, JavaScript para Principiantes</h4>
+                        <p class="instructor quitar-margen">Hector Lopes</p>
+                        <img src="img/estrellas.png">
+                        <div class="precios">
+                            <p class="precio quitar-margen">$200</p>
+                            <span class="u-pull-right precio-neto">$15</span>
+                        </div>   
+    
+                        <div class="card-btn">
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                        </div>
+                 
+                    </div>
+                </div> <!--.card-->
+
+                <div class="card">
+                    <img class="card-img" src="img/comidaVegetariana.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4 class="quitar-margen">Curso de Comida Vegetariana</h4>
+                        <p class="instructor quitar-margen">Pedro Jimenes</p>
+                        <img src="img/estrellas.png">
+                        <div class="precios">
+                            <p class="precio quitar-margen">$100</p>
+                            <span class="u-pull-right precio-neto">$50</span>
+                        </div>   
+    
+                        <div class="card-btn">
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                 
+                    </div>
+                </div> <!--.card-->
+
+                <div class="card">
+                    <img class="card-img" src="img/curosDeGuitarra.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4 class="quitar-margen">Guitarra para Principiantes</h4>
+                        <p class="instructor quitar-margen">Kareli Lopes</p>
+                        <img src="img/estrellas.png">
+                        <div class="precios">
+                            <p class="precio quitar-margen">$100</p>
+                            <span class="u-pull-right precio-neto">$30</span>
+                        </div>   
+    
+                        <div class="card-btn">
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                 
+                    </div>
+                </div> <!--.card-->
+                
+                <div class="card">
+                    <img class="card-img" src="img/HuertoEnTuCasa.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4 class="quitar-margen">Huerto en tu casa</h4>
+                        <p class="instructor quitar-margen">Juan Robles</p>
+                        <img src="img/estrellas.png">
+                        <div class="precios">
+                            <p class="precio quitar-margen">$80</p>
+                            <span class="u-pull-right precio-neto">$15</span>
+                        </div>   
+    
+                        <div class="card-btn">
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                        </div>
+                 
+                    </div>
+                </div> <!--.card-->
+                
+                <div class="card">
+                    <img class="card-img" src="img/decoracion.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4 class="quitar-margen">Decoración con productos de tu hogar</h4>
+                        <p class="instructor quitar-margen">Jessica Ruiz</p>
+                        <img src="img/estrellas.png">
+                        <div class="precios">
+                            <p class="precio quitar-margen">$50</p>
+                            <span class="u-pull-right precio-neto">$15</span>
+                        </div>   
+    
+                        <div class="card-btn">
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                 
+                    </div>
+                </div> <!--.card-->
+
+                <div class="card">
+                    <img class="card-img" src="img/diseno-web.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4 class="quitar-margen">Diseño Web para Principiantes</h4>
+                        <p class="instructor quitar-margen">Juan valdez</p>
+                        <img src="img/estrellas.png">
+                        <div class="precios">
+                            <p class="precio quitar-margen">$120</p>
+                            <span class="u-pull-right precio-neto">$60</span>
+                        </div>   
+    
+                        <div class="card-btn">
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                 
+                    </div>
+                </div> <!--.card-->
+
+                <div class="card">
+                    <img class="card-img" src="img/comida-mexicana.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4 class="quitar-margen">Comida Mexicana para principiantes</h4>
+                        <p class="instructor quitar-margen">Juan Torres</p>
+                        <img src="img/estrellas.png">
+                        <div class="precios">
+                            <p class="precio quitar-margen">$100</p>
+                            <span class="u-pull-right precio-neto">$15</span>
+                        </div>   
+    
+                        <div class="card-btn">
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                        </div>
+                 
+                    </div>
+                </div> <!--.card-->
+
+                <div class="card">
+                    <img class="card-img" src="img/studioMusical.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4 class="quitar-margen">Estudio Musical en tu casa</h4>
+                        <p class="instructor quitar-margen">Juan Pedro Diaz</p>
+                        <img src="img/estrellas.png">
+                        <div class="precios">
+                            <p class="precio quitar-margen">$200</p>
+                            <span class="u-pull-right precio-neto">$15</span>
+                        </div>   
+    
+                        <div class="card-btn">
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                 
+                    </div>
+                </div> <!--.card-->
+
+                <div class="card">
+                    <img class="card-img" src="img/coseha.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4 class="quitar-margen">Cosecha tus propias frutas y verduras</h4>
+                        <p class="instructor quitar-margen">Juan Pedro</p>
+                        <img src="img/estrellas.png">
+                        <div class="precios">
+                            <p class="precio quitar-margen">$200</p>
+                            <span class="u-pull-right precio-neto">$15</span>
+                        </div>   
+    
+                        <div class="card-btn">
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                 
+                    </div>
+                </div> <!--.card-->
+
+                <div class="card">
+                    <img class="card-img" src="img/curso-galletas.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4 class="quitar-margen">Prepara galletas caseras</h4>
+                        <p class="instructor quitar-margen">Juan Pedro</p>
+                        <img src="img/estrellas.png">
+                        <div class="precios">
+                            <p class="precio quitar-margen">$200</p>
+                            <span class="u-pull-right precio-neto">$15</span>
+                        </div>   
+    
+                        <div class="card-btn">
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                 
+                    </div>
+                </div> <!--.card-->
+
+                <div class="card">
+                    <img class="card-img" src="img/javascript-moderno.jpg" class="imagen-curso u-full-width">
+                    
+                    <div class="info-card">
+                        <h4 class="quitar-margen">JavaScript Moderno con ES6</h4>
+                        <p class="instructor quitar-margen">Nicolas Guevara</p>
+                        <img src="img/estrellas.png">
+                        <div class="precios">
+                            <p class="precio quitar-margen">$200</p>
+                            <span class="u-pull-right precio-neto">$15</span>
+                        </div>   
+    
+                        <div class="card-btn">
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                        </div>
+                 
+                    </div>
+                </div> <!--.card-->
+
+                <div class="card">
+                    <img class="card-img" src="img/recetasDeComida.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4 class="quitar-margen">100 Recetas de Comida Natural</h4>
+                        <p class="instructor quitar-margen">Juan Pedro</p>
+                        <img src="img/estrellas.png">
+                        <div class="precios">
+                            <p class="precio quitar-margen">$200</p>
+                            <span class="u-pull-right precio-neto">$15</span>
+                        </div>   
+    
+                        <div class="card-btn">
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                        </div>
+                 
+                    </div>
+                </div> <!--.card-->
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-acercade">
+            
+                <p class="text-white footer-parrafo">AcademiaOnline Bussines</p>
+                <p class="text-white footer-parrafo">Enseña en AcademiaOnline</p>
+                <p class="text-white footer-parrafo">Contactanos</p>
+                <p class="text-white footer-parrafo">Sustentabilidad</p>
+            </div>
+    
+            <div class="footer-micuenta">
+                <p class="text-white footer-parrafo">Ayuda y Soporte</p>
+                <p class="text-white footer-parrafo">Afiliados</p>
+                <p class="text-white footer-parrafo">Inversionistas</p>
+                <p class="text-white footer-parrafo">Blog</p>
+            </div>
+            
+            <div class="footer-ayuda">
+                <p class="text-white footer-parrafo">Resolución de problemas</p>
+                <p class="text-white footer-parrafo">Politiva de Privacidad</p>
+                <p class="text-white footer-parrafo">Reminos y Condiciones</p>
+                <p class="text-white footer-parrafo">Centro de seguridad</p>
+            </div>
+        </div>
+    
+
+        <div class="logo-copyright">
+            <img src="img/logo-footer.svg" alt="logotipo">
+            
+            <p class="copyright">&copy; 2024 Academia Online, Inc.</p>
+
+        </div>
+
+    </footer>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
