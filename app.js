@@ -16,11 +16,19 @@ function cargarEvenetListeners() {
     carrito.addEventListener('click', eliminarCurso)
     btnVaciarCarrito.addEventListener('click', vaciarCarrito)
 
+    document.addEventListener('DOMContentLoaded', () => {
+
+
+        articulosCarrito = JSON.parse(localStorage.getItem('cursos')) || []; 
+        carritoHTML();
+
+    })
+
 }
 
 function vaciarCarrito(e){
 
-    var articulosCarrito = [];
+    articulosCarrito = [];
     limpiarHTML()
 
 }
@@ -32,7 +40,7 @@ function agregarCurso(e){
     if (e.target.classList.contains("agregar-carrito")) {
         const cursoSeleccionado = e.target.parentElement.parentElement.parentElement
         
-        console.log(cursoSeleccionado);
+        
             
         leerDatosCurso(cursoSeleccionado)
     }
@@ -48,7 +56,7 @@ function eliminarCurso(e){
         articulosCarrito = articulosCarrito.filter(curso => curso.id !== cursoId)
         
         carritoHTML();
-        console.log(articulosCarrito);
+        ;
     }
 
 }
@@ -69,9 +77,6 @@ function leerDatosCurso(curso) {
 
     articulosCarrito = [...articulosCarrito, infoCurso]
 
-    console.log("agregado al array");
-    
-    console.log(articulosCarrito);
     carritoHTML();
 }
 
@@ -107,12 +112,19 @@ function carritoHTML() {
         contenedorCarrito.appendChild(div);
         contenedorCarrito.appendChild(hr);
     })
+
+    agregarLocalStorage()
+
+}
+
+function agregarLocalStorage() {
+    localStorage.setItem('cursos', JSON.stringify(articulosCarrito));
 }
 
 function limpiarHTML() {
     
     while (contenedorCarrito.firstChild) {
-        console.log(contenedorCarrito.firstChild);
+        
         contenedorCarrito.removeChild(contenedorCarrito.firstChild);  
     }
 
