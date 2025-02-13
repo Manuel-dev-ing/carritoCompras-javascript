@@ -38,10 +38,8 @@ function agregarCurso(e){
     e.preventDefault();
 
     if (e.target.classList.contains("agregar-carrito")) {
-        const cursoSeleccionado = e.target.parentElement.parentElement.parentElement
+        const cursoSeleccionado = e.target.parentElement.parentElement
         
-        
-            
         leerDatosCurso(cursoSeleccionado)
     }
 }
